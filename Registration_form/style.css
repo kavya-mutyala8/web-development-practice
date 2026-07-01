@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-image: linear-gradient(to right, #BCDA50, #C6DF69); */
+    font-size: 14px;
+    background-image: url("img2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.r_form_wrap .title {
+    padding: 25px;
+    background: #1C351E;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.r_form_wrap .title h2 {
+    color: #FFFFFF;                                        
+    font-size: 25px;
+    text-align: center;
+}
+
+.r_form {
+    padding: 40px;
+    border-radius: 20px;
+    background: #F1F8F3;
+    width: 500px;
+    max-width: 100%;
+
+}
+
+form {
+    display:block;
+    unicode-bidi: isolate;
+}
+
+.r_form .input-wrap {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.r_form .input-wrap label {
+    /* font-size: 16px; */
+    margin-bottom: 5px;
+    color: #1C351E;
+    display: block;
+}
+
+.r_form .input-wrap .input_item {
+    /* margin-bottom: 20px; */
+    /* font-size: 16px; */
+    /* color: #000; */
+    position: relative;
+    width: 100%;
+
+}
+
+.r_form .input-wrap .input_item .icon {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    font-size: 16px;
+    color: #000;
+}
+
+.r_form .input-wrap .input_item input {
+    width: 100%;
+    padding: 10px 20px 10px 50px;
+    border-radius: 20px;
+    border: 2px solid #CFE582;
+    background: #fff;
+    color: #000;
+    transition: 0.5s ease;
+    height: 40px;
+}
+
+.eye-toggle-check {
+    display: none;
+}
+
+.r_form .input-wrap .input_item .eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #000;
+  font-size: 16px;
+  z-index: 10;
+}
+
+.r_form .input-wrap .input-radio {
+    margin-right: 20px;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.r_form .input-wrap .input-radio .input_radio_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    position: relative;
+    width: 100px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    background: #CFE582;
+    color: #5F8C4F;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    width: 100%;
+}
+
+button:hover {
+    background: #1C351E;
+}

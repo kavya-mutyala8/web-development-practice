@@ -17,11 +17,12 @@
 
             <div class="r_form">
                 <form>
-                    <div class="input_wrap">
-                        <label for="name">Your Name</label>
-                        <div class="input_item">
-                            <span class="icon"><i class="fa-solid fa-user"></i></span>
-                            <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                        <div class="input-wrap">
+                            <label for="name">Your Name</label>
+                            <div class="input_item">
+                                <span class="icon"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                            </div>
                         </div>
 
                         <div class="input-wrap">
@@ -30,63 +31,95 @@
                                 <span class="icon"><i class="fa-solid fa-envelope"></i></span>
                                 <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
                             </div>
+                        </div>
 
-                            <div class="input_wrap">
-                                <label for="password">Your Password</label>
-                                <div class="input_item">
-                                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                                    <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
-                                </div>
+                        <div class="input-wrap">
+                            <label for="password">Your Password</label>
+                            <div class="input_item">
+                                <span class="icon"><i class="fa-solid fa-lock"></i></span>
+
+                                <input type="checkbox" id="toggle-pass" class="eye-toggle-check">
+
+                                <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
+
+                               <label for="toggle-pass" class="eye-icon toggle-password"><i class="fa-solid fa-eye"></i></label>
                             </div>
+                        </div>
 
-                            <div class="input_wrap">
-                                <label for="confirm_password">Confirm Password</label>
-                                <div class="input_item">
-                                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
-                                    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Your Password" required> 
-                                </div>
+                        <div class="input-wrap">
+                            <label for="confirm_password">Confirm Password</label>
+                            <div class="input_item">
+                                <span class="icon"><i class="fa-solid fa-lock"></i></span>
+
+                                <input type="checkbox" id="toggle-confirm" class="eye-toggle-check">
+
+                                <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Your Password" required> 
+
+                               <label for="toggle-confirm" class="eye-icon toggle-password"><i class="fa-solid fa-eye"></i></label>
                             </div>
+                        </div>
 
-                            <div class="input_wrap">
-                                <label for="phone">Your Phone</label>
-                                <div class="input_item">
-                                    <span class="icon"><i class="fa-solid fa-phone"></i></span>
-                                    <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number" required>
-                                </div>
+                        <div class="input-wrap">
+                            <label for="phone">Your Phone</label>
+                            <div class="input_item">
+                                <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                                <input type="tel" name="phone" id="phone" placeholder="Enter Your Phone Number" required>
                             </div>
+                        </div>
 
-                            <div class="input_wrap">
-                                <label for="address">Your Address</label>
-                                <div class="input_item">
-                                    <span class="icon"><i class="fa-solid fa-home"></i></span>
-                                    <input type="text" name="address" id="address" placeholder="Enter Your Address" required>
-                                </div>
+                        <div class="input-wrap">
+                           <label for="address">Your Address</label>
+                            <div class="input_item">
+                                <span class="icon"><i class="fa-solid fa-home"></i></span>
+                                <input type="text" name="address" id="address" placeholder="Enter Your Address" required>
                             </div>
+                        </div>
 
-                            <div class="input_wrap">
+                        <div class="input-wrap">
                                 <label for="gender">Your Gender</label>
                                 <div class="input-radio">
                                     <div class="input_radio_item">
                                         <input type="radio" name="gender" id="male" value="male" required class="radio">
-                                        <label for="male" class="radio-label"> <i class="fa-solid fa-mars" name="Male-sharp"></i> Male</label>
+                                        <label for="male" class="radio-label"> Male</label>
                                     </div>
                                     <div class="input_radio_item">
                                         <input type="radio" name="gender" id="female" value="female" required>
-                                        <label for="female" class="radio-label"> <i class="fa-solid fa-venus" name="Female-sharp"></i> Female</label>
+                                        <label for="female" class="radio-label"> Female</label>
                                     </div>
                                     <div class="input_radio_item">
                                         <input type="radio" name="gender" id="other" value="other" required>
-                                        <label for="other" class="radio-label"> <i class="fa-solid fa-genderless" name="Other-sharp"></i> Other</label>
+                                        <label for="other" class="radio-label"> Other</label>
                                     </div>
                                 </div>
-                            </div>
                         </div>
-                    </div>
-                    <button type="submit" class="btn">Register</button>
+                        <button type="submit" class="btn">Register</button>
                 </form>
             </div>
         </div>
     </div>
     
+
+
+
+ <script>
+    const toggleButtons = document.querySelectorAll('.toggle-password');
+    toggleButtons.forEach(button => {
+    button.addEventListener('click', function (e) {
+      e.preventDefault(); 
+      
+      const inputItem = this.parentElement;
+      const passwordInput = inputItem.querySelector('input[type="password"], input[type="text"]');
+      const icon = this.querySelector('i');
+      
+      if (passwordInput.type === 'password') {
+        passwordInput.type = 'text';
+        icon.classList.replace('fa-eye', 'fa-eye-slash'); 
+      } else {
+        passwordInput.type = 'password';
+        icon.classList.replace('fa-eye-slash', 'fa-eye'); 
+      }
+    });
+  });
+ </script>
 </body>
 </html>
