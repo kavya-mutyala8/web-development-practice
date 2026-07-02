@@ -7,7 +7,6 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    /* background-image: linear-gradient(to right, #BCDA50, #C6DF69); */
     font-size: 14px;
     background-image: url("img2.jpg");
     background-size: cover;
@@ -62,16 +61,12 @@ form {
 }
 
 .r_form .input-wrap label {
-    /* font-size: 16px; */
     margin-bottom: 5px;
     color: #1C351E;
     display: block;
 }
 
 .r_form .input-wrap .input_item {
-    /* margin-bottom: 20px; */
-    /* font-size: 16px; */
-    /* color: #000; */
     position: relative;
     width: 100%;
 
