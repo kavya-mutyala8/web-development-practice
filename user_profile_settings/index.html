@@ -5,34 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>User profile Settings</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="nav-bar">
-            <i class="fa-solid fa-bars"></i>
-            <div class="nav-logo-border">
-                <h4>CLOUD</h4>
-                <span>COMPUTING</span>
+            <div class="right-wrap">
+                <i class="fa-solid fa-bars"></i>
+                <div class="nav-logo-border">
+                    <h4>CLOUD</h4>
+                    <span>COMPUTING</span>
+                </div>
             </div>
-                
-            <div class="search-bar">
+            
+            <div class="left-wrap">
+                <div class="search-bar">
                     <form class="search">
-                        <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
-                        <input type="text" id="search" placeholder="Search...">
+                        <label for="search"><i class="fa-solid fa-magnifying-glass" class="search-icon"></i></label>
+                        <input type="text" id="search" placeholder="Search..." class="input-search">
                     </form>
-            </div>
+                </div>
 
-            <div class="header-action">
-                <i class="fa-solid fa-bell"></i>
-                <i class="fa-solid fa-sun"></i>
-                <i class="fa-solid fa-moon"></i>
-            </div>
+                <div class="header-action">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
 
-            <div class="user-profile">
-                <i class="fa-regular fa-circle-user"></i>
-                <i class="fa-solid fa-angle-down"></i>
+                <div class="header-action-theme">
+                    <i class="fa-solid fa-sun" class="theme-sun"></i>
+                    <i class="fa-solid fa-moon" class="theme-moon"></i>
+                </div>
+
+                <div class="user-profile">
+                    <i class="fa-regular fa-circle-user"></i>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
             </div>
         </div>
+
+
     </header>
 
     <div class="app-body">
@@ -65,100 +75,98 @@
             </nav>
         </aside>
 
-        <main class="content-wrapper">
-      <h1>Account Settings</h1>
+      <main class="content-wrapper">
+            <h1>Account Settings</h1>
 
-      <div class="settings-layout">
-        <nav class="settings-subnav" aria-label="Account Settings Sections">
-          <ul>
-            <li><a href="/settings/profile" aria-current="page">My Profile</a></li>
-            <li><a href="/settings/security">Security</a></li>
-            <li><a href="/settings/teams">Teams</a></li>
-            <li><a href="/settings/members">Team Member</a></li>
-            <li><a href="/settings/notifications">Notifications</a></li>
-            <li><a href="/settings/billing">Billing</a></li>
-            <li><a href="/settings/export">Data Export</a></li>
-            <li class="danger-zone"><a href="/settings/delete">Delete Account</a></li>
-          </ul>
-        </nav>
+            <div class="settings-layout">
+                <nav class="settings-subnav" aria-label="Account Settings Sections">
+                    <ul>
+                        <li><a href="/settings/profile" aria-current="page">My Profile</a></li>
+                        <li><a href="/settings/security">Security</a></li>
+                        <li><a href="/settings/teams">Teams</a></li>
+                        <li><a href="/settings/members">Team Member</a></li>
+                        <li><a href="/settings/notifications">Notifications</a></li>
+                        <li><a href="/settings/billing">Billing</a></li>
+                        <li><a href="/settings/export">Data Export</a></li>
+                        <li class="danger-zone"><a href="/settings/delete">Delete Account</a></li>
+                    </ul>
+                </nav>
 
-        <section class="profile-card" aria-labelledby="profile-heading">
-          <h2 id="profile-heading">My Profile</h2>
+                <section class="profile-card" aria-labelledby="profile-heading">
+                    <h2 id="profile-heading">My Profile</h2>
 
-          <div class="profile-hero">
-            <figure>
-              <i class="fa-regular fa-circle-user"></i>
-            </figure>
-            <div class="hero-details">
-              <h3>Swathi Mutyala</h3>
-              <p class="role">Team Manager</p>
-              <p><address class="location-inline">Vijayawada, Andhra Pradesh</address></p>
-            </div>
-            <button type="button" class="btn-edit" aria-label="Edit Profile Basic Info">Edit</button>
-          </div>
-
-          <section class="profile-block" aria-labelledby="personal-info-heading">
-                <div class="block-header">
-                    <h3 id="personal-info-heading">Personal Information</h3>
-                    <button type="button" class="btn-edit" aria-label="Edit Personal Information">Edit</button>
-                </div>
-
-                <dl class="info-grid">
-                    <div>
-                            <dt>First Name</dt>
-                            <dd>Swathi</dd>
+                    <div class="profile-hero">
+                        <figure>
+                            <i class="fa-regular fa-circle-user"></i>
+                        </figure>
+                        <div class="hero-details">
+                            <h3>Swathi Mutyala</h3>
+                            <p class="role">Team Manager</p>
+                            <p><address class="location-inline">Vijayawada, Andhra Pradesh</address></p>
                         </div>
-                        <div>
-                            <dt>Last Name</dt>
-                            <dd>Mutyala</dd>
-                        </div>
-                        <div>
-                            <dt>Email address</dt>
-                            <dd><a href="mailto:swathimutyala@gmail.com">swathimutyala@gmail.com</a></dd>
-                        </div>
-                        <div>
-                            <dt>Phone</dt>
-                            <dd><a href="tel:+0934534646">+09 345 346 46</a></dd>
-                        </div>
-                        <div class="full-width">
-                            <dt>Bio</dt>
-                            <dd>Team Manager</dd>
+                        <button type="button" class="btn-edit" aria-label="Edit Profile Basic Info">Edit</button>
                     </div>
-                </dl>
-          </section>
 
-          <section class="profile-block" aria-labelledby="address-heading">
-               <div class="block-header">
-              <h3 id="address-heading">Address</h3>
-              <button type="button" class="btn-edit" aria-label="Edit Address">Edit</button>
-            </div>
-               <address>
-                 <dl class="info-grid">
-                        <div>
-                           <dt>Country</dt>
-                           <dd>India</dd>
+                    <section class="profile-block" aria-labelledby="personal-info-heading">
+                        <div class="block-header">
+                            <h3 id="personal-info-heading">Personal Information</h3>
+                            <button type="button" class="btn-edit" aria-label="Edit Personal Information">Edit</button>
                         </div>
-                        <div>
-                            <dt>City/State</dt>
-                            <dd>Vijayawada, Andhra Pradesh</dd>
+
+                        <dl class="info-grid">
+                            <div>
+                                <dt>First Name</dt>
+                                <dd>Swathi</dd>
+                            </div>
+                            <div>
+                                <dt>Last Name</dt>
+                                <dd>Mutyala</dd>
+                            </div>
+                            <div>
+                                <dt>Email address</dt>
+                                <dd><a href="mailto:swathimutyala@gmail.com">swathimutyala@gmail.com</a></dd>
+                            </div>
+                            <div>
+                                <dt>Phone</dt>
+                                <dd><a href="tel:+0934534646">+09 345 346 46</a></dd>
+                            </div>
+                            <div class="full-width">
+                                <dt>Bio</dt>
+                                <dd>Team Manager</dd>
+                            </div>
+                        </dl>
+                        <!-- </div> -->
+                    </section>
+
+                    <section class="profile-block" aria-labelledby="address-heading">
+                        <div class="block-header">
+                            <h3 id="address-heading">Address</h3>
+                            <button type="button" class="btn-edit" aria-label="Edit Address">Edit</button>
                         </div>
-                        <div>
-                            <dt>Postal Code</dt>
-                            <dd>ERT 2354</dd>
-                        </div>
-                        <div>
-                            <dt>TAX ID</dt>
-                            <dd>AS45645756</dd>
-                        </div>
-                    </div>
-                </div>
-              </dl>
-            </address>
-          </section>    
-        </section>
-      </div> 
-    </main>
+                        <address>
+                            <dl class="info-grid">
+                                <div>
+                                    <dt>Country</dt>
+                                    <dd>India</dd>
+                                </div>
+                                <div>
+                                    <dt>City/State</dt>
+                                    <dd>Vijayawada, Andhra Pradesh</dd>
+                                </div>
+                                <div>
+                                    <dt>Postal Code</dt>
+                                    <dd>ERT 2354</dd>
+                                </div>
+                                <div>
+                                    <dt>TAX ID</dt>
+                                    <dd>AS45645756</dd>
+                                </div>
+                            </dl>
+                        </address>
+                    </section>    
+                </section>
+            </div>                  
+        </main>
     </div>
-    
 </body>
 </html>
