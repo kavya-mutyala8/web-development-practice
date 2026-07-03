@@ -3,69 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile Settings</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>User profile Settings</title>
 </head>
 <body>
-    <div class="wrapper">
-        <aside class="settings-sidebar">
-            <div class="user-pill">
-                <div class="avatar-placeholder">S</div>
-                <div class="User-pill-info">
-                    <h3>Swathi M</h3>
-                    <p>Pro Member</p>
-                </div>
+    <header>
+        <div class="nav-bar">
+            <i class="fa-solid fa-bars"></i>
+            <div class="nav-logo-border">
+                <h4>CLOUD</h4>
+                <span>COMPUTING</span>
+            </div>
+                
+            <div class="search-bar">
+                    <form class="search">
+                        <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        <input type="text" id="search" placeholder="Search...">
+                    </form>
             </div>
 
-            <nav class="sidebar-menu">
-                <a href="#profile">Profile</a>
-                <a href="#account">Account</a>
-                <a href="#notifications">Notifications</a>
-                <a href="#privacy">Privacy</a>
-                <a href="#security">Security</a>
-                <a href="#Logout">Logout</a>
+            <div class="header-action">
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+            </div>
+
+            <div class="user-profile">
+                <i class="fa-regular fa-circle-user"></i>
+                <i class="fa-solid fa-angle-down"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="app-body">
+        <aside class="sidebar">
+            <section class="workspace-switcher">
+                <div>
+                    <h2>Cloud Team</h2>
+                    <p>CloudComputing@gmail.com</p>
+                </div>
+            </section>
+
+            <nav aria-label="Main Menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/create-contract">Create Contract</a></li>
+                    <li><a href="/contracts">Contracts</a></li>
+                    <li><a href="/payment">Payment</a></li>
+                    <li><a href="/documents">Com. Documents</a></li>
+                    <li><a href="/invoice">Invoice Receipts <span class="badge">9</span></a></li>
+                    <li><a href="/team-settings">Team Settings</a></li>
+                </ul>
+
+                <h3>Organisation</h3>
+                <ul>
+                    <li><a href="/apps">Apps & Perks</a></li>
+                    <li><a href="/tax">Tax Forms <span class="badge badge-new">New</span></a></li>
+                    <li><a href="/settings">Organisation Settings</a></li>
+                </ul>
             </nav>
         </aside>
 
-        <main class="Settinga-main">
-            <h2>Account Settings</h2>
-            <p class="account-settings-description">Manage your account settings and set e-mail preferences.</p>
+        <main class="content-wrapper">
+      <h1>Account Settings</h1>
 
-            <form class="account-settings-form">
-                <div class="profile-pic-selection">
-                    <div class="avatar-placeholder">S</div>
-                    <div class="pic-button">
-                        <button type="button" class="change-pic-button">Change Photo</button>
-                        <button type="button" class="remove-pic-button">Remove</button>
+      <div class="settings-layout">
+        <nav class="settings-subnav" aria-label="Account Settings Sections">
+          <ul>
+            <li><a href="/settings/profile" aria-current="page">My Profile</a></li>
+            <li><a href="/settings/security">Security</a></li>
+            <li><a href="/settings/teams">Teams</a></li>
+            <li><a href="/settings/members">Team Member</a></li>
+            <li><a href="/settings/notifications">Notifications</a></li>
+            <li><a href="/settings/billing">Billing</a></li>
+            <li><a href="/settings/export">Data Export</a></li>
+            <li class="danger-zone"><a href="/settings/delete">Delete Account</a></li>
+          </ul>
+        </nav>
+
+        <section class="profile-card" aria-labelledby="profile-heading">
+          <h2 id="profile-heading">My Profile</h2>
+
+          <div class="profile-hero">
+            <figure>
+              <i class="fa-regular fa-circle-user"></i>
+            </figure>
+            <div class="hero-details">
+              <h3>Swathi Mutyala</h3>
+              <p class="role">Team Manager</p>
+              <p><address class="location-inline">Vijayawada, Andhra Pradesh</address></p>
+            </div>
+            <button type="button" class="btn-edit" aria-label="Edit Profile Basic Info">Edit</button>
+          </div>
+
+          <section class="profile-block" aria-labelledby="personal-info-heading">
+                <div class="block-header">
+                    <h3 id="personal-info-heading">Personal Information</h3>
+                    <button type="button" class="btn-edit" aria-label="Edit Personal Information">Edit</button>
+                </div>
+
+                <dl class="info-grid">
+                    <div>
+                            <dt>First Name</dt>
+                            <dd>Swathi</dd>
+                        </div>
+                        <div>
+                            <dt>Last Name</dt>
+                            <dd>Mutyala</dd>
+                        </div>
+                        <div>
+                            <dt>Email address</dt>
+                            <dd><a href="mailto:swathimutyala@gmail.com">swathimutyala@gmail.com</a></dd>
+                        </div>
+                        <div>
+                            <dt>Phone</dt>
+                            <dd><a href="tel:+0934534646">+09 345 346 46</a></dd>
+                        </div>
+                        <div class="full-width">
+                            <dt>Bio</dt>
+                            <dd>Team Manager</dd>
+                    </div>
+                </dl>
+          </section>
+
+          <section class="profile-block" aria-labelledby="address-heading">
+               <div class="block-header">
+              <h3 id="address-heading">Address</h3>
+              <button type="button" class="btn-edit" aria-label="Edit Address">Edit</button>
+            </div>
+               <address>
+                 <dl class="info-grid">
+                        <div>
+                           <dt>Country</dt>
+                           <dd>India</dd>
+                        </div>
+                        <div>
+                            <dt>City/State</dt>
+                            <dd>Vijayawada, Andhra Pradesh</dd>
+                        </div>
+                        <div>
+                            <dt>Postal Code</dt>
+                            <dd>ERT 2354</dd>
+                        </div>
+                        <div>
+                            <dt>TAX ID</dt>
+                            <dd>AS45645756</dd>
+                        </div>
                     </div>
                 </div>
-
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" value="SwathiM">
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" value="swathim@example.com">
-                </div>
-
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" value="********">
-                </div>
-
-                <div class="form-group">
-                    <label for="notifications">Email Notifications</label>
-                    <select id="notifications" name="notifications">
-                        <option value="all">All Notifications</option>
-                        <option value="important">Important Only</option>
-                        <option value="none">None</option>
-                    </select>
-                </div>
-
-                <button type="submit" class="save-button">Save Changes</button>
-            </form>
-        </main>
+              </dl>
+            </address>
+          </section>    
+        </section>
+      </div> 
+    </main>
     </div>
     
 </body>
