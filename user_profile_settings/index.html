@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>User profile Settings</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -21,7 +21,7 @@
             <div class="left-wrap">
                 <div class="search-bar">
                     <form class="search">
-                        <label for="search"><i class="fa-solid fa-magnifying-glass" class="search-icon"></i></label>
+                        <label for="search"><i class="fa-solid fa-magnifying-glass"></i></label>
                         <input type="text" id="search" placeholder="Search..." class="input-search">
                     </form>
                 </div>
@@ -35,14 +35,12 @@
                     <i class="fa-solid fa-moon theme"></i>
                 </div>
 
-                <div class="user-profile">
-                    <i class="fa-solid fa-circle-user"></i>
+                <div class="user-profile-trigger">
+                    <div class="header-profile-avatar">A</div>
                     <i class="fa-solid fa-angle-down"></i>
                 </div>
             </div>
         </div>
-
-
     </header>
 
     <div class="app-body">
@@ -76,7 +74,7 @@
             </nav>
         </aside>
 
-      <main class="content-wrapper">
+        <main class="content-wrapper">
             <h1 class="main-text">Account Settings</h1>
 
             <div class="settings-layout">
@@ -142,13 +140,12 @@
                                 <dd>Team Manager</dd>
                             </div>
                         </dl>
-
                     </section>
 
                     <section class="profile-block" aria-labelledby="address-heading">
                         <div class="block-header">
                             <h3 id="address-heading">Address</h3>
-                            <button type="button" class="btn-edit" aria-label="Edit Personal Information">
+                            <button type="button" class="btn-edit" aria-label="Edit Address Information">
                                 <i class="fa-solid fa-pen"></i>
                                 <span>Edit</span>
                             </button>
@@ -174,7 +171,7 @@
                         </dl>
                     </section>
                 </section>
-            </div>                  
+            </div>                    
         </main>
     </div>
 </body>
