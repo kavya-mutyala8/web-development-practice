@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey_form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <div class="avatar-placeholder"></div>
+            <h3>Swathi Nexus</h3>
+            <div class="large-avatar-placeholder">SURVEY</div>
+        </header>
+
+        <form>
+            <div class="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="name" placeholder="Enter Your Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="age-label">Age</label>
+                <input type="number" name="number" placeholder="Enter Your Email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="text" id="Occupatation-label">Occupation</label>
+                <input type="text" name="Occupation" placeholder="Enter Your Occupation" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="age-label">Email</label>
+                <input type="text" name="email" placeholder="Enter Your Email" required>
+            </div>
+
+            <div class="form-group">
+                <h3>Please rate how much you agree with the following statements</h3>
+                <div class="radio-group">
+                    <tabel border="0" cellpadding="10">
+                        <thead>
+                            <tr>
+                                <th>Factors affecting purchase decision</th>
+                                <th>5<br>(Strongly Agree)</th>
+                                <th>4<br>(Agree)</th>
+                                <th>3<br>(Neutral)</th>
+                                <th>2<br>(Disagree)</th>
+                                <th>1<br>(Strongly Disagree)</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Price</td>
+                                <td><input type="radio" name="price" value="5"></td>
+                                <td><input type="radio" name="price" value="4"></td>
+                                <td><input type="radio" name="price" value="3"></td>
+                                <td><input type="radio" name="price" value="2"></td>
+                                <td><input type="radio" name="price" value="1"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Quantity</td>
+                                <td><input type="radio" name="Quantity" value="5"></td>
+                                <td><input type="radio" name="Quantity" value="4"></td>
+                                <td><input type="radio" name="Quantity" value="3"></td>
+                                <td><input type="radio" name="Quantity" value="2"></td>
+                                <td><input type="radio" name="Quantity" value="1"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Brand</td>
+                                <td><input type="radio" name="Brand" value="5"></td>
+                                <td><input type="radio" name="Brand" value="4"></td>
+                                <td><input type="radio" name="Brand" value="3"></td>
+                                <td><input type="radio" name="Brand" value="2"></td>
+                                <td><input type="radio" name="Brand" value="1"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Reviews</td>
+                                <td><input type="radio" name="Reviews" value="5"></td>
+                                <td><input type="radio" name="Reviews" value="4"></td>
+                                <td><input type="radio" name="Reviews" value="3"></td>
+                                <td><input type="radio" name="Reviews" value="2"></td>
+                                <td><input type="radio" name="Reviews" value="1"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Convenience</td>
+                                <td><input type="radio" name="Convenience" value="5"></td>
+                                <td><input type="radio" name="Convenience" value="4"></td>
+                                <td><input type="radio" name="Convenience" value="3"></td>
+                                <td><input type="radio" name="Convenience" value="2"></td>
+                                <td><input type="radio" name="Convenience" value="1"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Personal Values</td>
+                                <td><input type="radio" name="Personal Values" value="5"></td>
+                                <td><input type="radio" name="Personal Values" value="4"></td>
+                                <td><input type="radio" name="Personal Values" value="3"></td>
+                                <td><input type="radio" name="Personal Values" value="2"></td>
+                                <td><input type="radio" name="Personal Values" value="1"></td>
+                            </tr>
+
+                            <tr>
+                                <td>Emotional Factors</td>
+                                <td><input type="radio" name="Emotional Factors" value="5"></td>
+                                <td><input type="radio" name="Emotional Factors" value="4"></td>
+                                <td><input type="radio" name="Emotional Factors" value="3"></td>
+                                <td><input type="radio" name="Emotional Factors" value="2"></td>
+                                <td><input type="radio" name="Emotional Factors" value="1"></td>
+                           </tr>
+                        </tbody>
+                    </tabel>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <h3>Message</h3>
+                <textarea name="message" class="input" placeholder="Message" required></textarea>
+            </div>
+        </form>
+    </main>
+    
+</body>
+</html>
