@@ -9,36 +9,36 @@
 <body>
     <main>
         <header>
-            <div class="avatar-placeholder"></div>
-            <h3>Swathi Nexus</h3>
-            <div class="large-avatar-placeholder">SURVEY</div>
+            <div class="left-wrap">
+            <div class="avatar-placeholder">SN</div>
+            <h3 class="header-text">Swathi Nexus</h3>
+            </div>
+            <div class="right-wrap">
+            <div class="large-avatar-placeholder">Survey</div>
+            </div>
         </header>
 
         <form>
-            <div class="form-group">
-                <label for="name" id="name-label">Name</label>
-                <input type="text" name="name" placeholder="Enter Your Name" required>
+            <div class="input-wrap">
+                <div class="form-group input-text-top">
+                    <input type="text" class="pill-input W-long" placeholder="Enter Your Name" required>
+                    <input type="number" class="pill-input W-short" placeholder="Enter Your Age" required>
+                </div>
+
+                <div class="form-group input-text-middle">
+                    <input type="text" class="pill-input W-short" placeholder="Enter Your Gender" required>
+                    <input type="text" class="pill-input W-long" placeholder="Enter Your Occupation" required>
+                </div>
+
+                <div class="form-group input-text-bottom">
+                    <input type="text" class="pill-input W-Complete" placeholder="Enter Your Email" required>
+                </div>
             </div>
 
             <div class="form-group">
-                <label for="number" id="age-label">Age</label>
-                <input type="number" name="number" placeholder="Enter Your Email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="text" id="Occupatation-label">Occupation</label>
-                <input type="text" name="Occupation" placeholder="Enter Your Occupation" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email" id="age-label">Email</label>
-                <input type="text" name="email" placeholder="Enter Your Email" required>
-            </div>
-
-            <div class="form-group">
-                <h3>Please rate how much you agree with the following statements</h3>
+                <h3 class="radio-text">Please rate how much you agree with the following statements</h3>
                 <div class="radio-group">
-                    <tabel border="0" cellpadding="10">
+                    <table border="0" cellpadding="10">
                         <thead>
                             <tr>
                                 <th>Factors affecting purchase decision</th>
@@ -52,75 +52,75 @@
 
                         <tbody>
                             <tr>
-                                <td>Price</td>
-                                <td><input type="radio" name="price" value="5"></td>
-                                <td><input type="radio" name="price" value="4"></td>
-                                <td><input type="radio" name="price" value="3"></td>
-                                <td><input type="radio" name="price" value="2"></td>
-                                <td><input type="radio" name="price" value="1"></td>
+                                <td class="Data">Price</td>
+                                    <td class="ptd5"><input type="radio" name="price" value="5"></td>
+                                    <td class="ptd4"><input type="radio" name="price" value="4"></td>
+                                    <td class="ptd3"><input type="radio" name="price" value="3"></td>
+                                    <td class="ptd2"><input type="radio" name="price" value="2"></td>
+                                    <td class="ptd1"><input type="radio" name="price" value="1"></td>  
                             </tr>
 
                             <tr>
-                                <td>Quantity</td>
-                                <td><input type="radio" name="Quantity" value="5"></td>
-                                <td><input type="radio" name="Quantity" value="4"></td>
-                                <td><input type="radio" name="Quantity" value="3"></td>
-                                <td><input type="radio" name="Quantity" value="2"></td>
-                                <td><input type="radio" name="Quantity" value="1"></td>
+                                <td class="Data">Quantity</td>
+                                    <td class="qtd5"><input type="radio" name="Quantity" value="5"></td>
+                                    <td class="qtd4"><input type="radio" name="Quantity" value="4"></td>
+                                    <td class="qtd3"><input type="radio" name="Quantity" value="3"></td>
+                                    <td class="qtd2"><input type="radio" name="Quantity" value="2"></td>
+                                    <td class="qtd1"><input type="radio" name="Quantity" value="1"></td>
                             </tr>
 
                             <tr>
-                                <td>Brand</td>
-                                <td><input type="radio" name="Brand" value="5"></td>
-                                <td><input type="radio" name="Brand" value="4"></td>
-                                <td><input type="radio" name="Brand" value="3"></td>
-                                <td><input type="radio" name="Brand" value="2"></td>
-                                <td><input type="radio" name="Brand" value="1"></td>
+                                <td class="Data">Brand</td>
+                                    <td class="btd5"><input type="radio" name="Brand" value="5"></td>
+                                    <td class="btd4"><input type="radio" name="Brand" value="4"></td>
+                                    <td class="btd3"><input type="radio" name="Brand" value="3"></td>
+                                    <td class="btd2"><input type="radio" name="Brand" value="2"></td>
+                                    <td class="btd1"><input type="radio" name="Brand" value="1"></td>
                             </tr>
 
                             <tr>
-                                <td>Reviews</td>
-                                <td><input type="radio" name="Reviews" value="5"></td>
-                                <td><input type="radio" name="Reviews" value="4"></td>
-                                <td><input type="radio" name="Reviews" value="3"></td>
-                                <td><input type="radio" name="Reviews" value="2"></td>
-                                <td><input type="radio" name="Reviews" value="1"></td>
+                                <td class="Data">Reviews</td>
+                                    <td class="rtd5"><input type="radio" name="Reviews" value="5"></td>
+                                    <td class="rtd4"><input type="radio" name="Reviews" value="4"></td>
+                                    <td class="rtd3"><input type="radio" name="Reviews" value="3"></td>
+                                    <td class="rtd2"><input type="radio" name="Reviews" value="2"></td>
+                                    <td class="rtd1"><input type="radio" name="Reviews" value="1"></td>
                             </tr>
 
                             <tr>
-                                <td>Convenience</td>
-                                <td><input type="radio" name="Convenience" value="5"></td>
-                                <td><input type="radio" name="Convenience" value="4"></td>
-                                <td><input type="radio" name="Convenience" value="3"></td>
-                                <td><input type="radio" name="Convenience" value="2"></td>
-                                <td><input type="radio" name="Convenience" value="1"></td>
+                                <td class="Data">Convenience</td>
+                                    <td class="ctd5"><input type="radio" name="Convenience" value="5"></td>
+                                    <td class="ctd4"><input type="radio" name="Convenience" value="4"></td>
+                                    <td class="ctd3"><input type="radio" name="Convenience" value="3"></td>
+                                    <td class="ctd2"><input type="radio" name="Convenience" value="2"></td>
+                                    <td class="ctd1"><input type="radio" name="Convenience" value="1"></td>
                             </tr>
 
                             <tr>
-                                <td>Personal Values</td>
-                                <td><input type="radio" name="Personal Values" value="5"></td>
-                                <td><input type="radio" name="Personal Values" value="4"></td>
-                                <td><input type="radio" name="Personal Values" value="3"></td>
-                                <td><input type="radio" name="Personal Values" value="2"></td>
-                                <td><input type="radio" name="Personal Values" value="1"></td>
+                                <td class="Data">Personal Values</td>
+                                    <td class="pvtd5"><input type="radio" name="Personal Values" value="5"></td>
+                                    <td class="pvtd4"><input type="radio" name="Personal Values" value="4"></td>
+                                    <td class="pvtd3"><input type="radio" name="Personal Values" value="3"></td>
+                                    <td class="pvtd2"><input type="radio" name="Personal Values" value="2"></td>
+                                    <td class="pvtd1"><input type="radio" name="Personal Values" value="1"></td>
                             </tr>
 
                             <tr>
-                                <td>Emotional Factors</td>
-                                <td><input type="radio" name="Emotional Factors" value="5"></td>
-                                <td><input type="radio" name="Emotional Factors" value="4"></td>
-                                <td><input type="radio" name="Emotional Factors" value="3"></td>
-                                <td><input type="radio" name="Emotional Factors" value="2"></td>
-                                <td><input type="radio" name="Emotional Factors" value="1"></td>
+                                <td class="Data">Emotional Factors</td>
+                                    <td class="etd5"><input type="radio" name="Emotional Factors" value="5"></td>
+                                    <td class="etd4"><input type="radio" name="Emotional Factors" value="4"></td>
+                                    <td class="etd3"><input type="radio" name="Emotional Factors" value="3"></td>
+                                    <td class="etd2"><input type="radio" name="Emotional Factors" value="2"></td>
+                                    <td class="etd1"><input type="radio" name="Emotional Factors" value="1"></td>
                            </tr>
                         </tbody>
-                    </tabel>
+                    </table>
                 </div>
             </div>
 
-            <div class="form-group">
-                <h3>Message</h3>
-                <textarea name="message" class="input" placeholder="Message" required></textarea>
+            <div class="form-group footer-text">
+                <h3 class="footer-message">Message</h3>
+                <textarea name="message" class="input" required></textarea>
             </div>
         </form>
     </main>
