@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.avatar-placeholder {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    background-color: rgb(68, 68, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.left-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+.header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.right-wrap {
+    display: flex;
+    align-items: center;
+    margin-right: 55px;
+}
+
+.large-avatar-placeholder {
+    display: flex;
+    align-items: center;
+    width: 250px;
+    height: 75px;
+    border-radius: 60px;
+    background-color: rgb(68, 68, 221);
+    color: #FFFFFF;
+    justify-content: center;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+
+form {
+    margin: 45px;
+    width: 1300px;
+}
+
+.input-wrap {
+    gap: 15px;
+    margin-bottom: 45px;
+    width: 1400px;
+}
+
+.input-text-top {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-text-middle {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.input-text-bottom {
+    display: flex;
+}
+
+.pill-input {
+    border: 1.5px solid #8BA1D2;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+pill-input::placeholder {
+    color: #6A7BB0;
+    opacity: 1;
+}
+
+.W-long {
+    width: 1300px;
+}
+
+.W-Complete {
+    width: 1300px;
+}
+
+.radio-text {
+    margin-bottom: 25px;
+}
+
+.radio-group {
+    display: flex;
+    border: 1.5px solid #8BA1D2;
+    border-radius: 25px;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+thead {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+th {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+tbody {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+}
+
+tr {
+    margin-bottom: 40px;
+}
+
+.ptd5 {
+    padding-right: 30px;
+    padding-left: 345px;
+}
+
+.ptd4 {
+    padding-right: 30px;
+    padding-left: 100px;
+}
+
+.ptd3 {
+    padding-right: 30px;
+    padding-left: 65px;
+}
+
+.ptd2 {
+    padding-right: 30px;
+    padding-left: 75px;
+}
+
+.ptd1 {
+    padding-right: 30px;
+    padding-left: 120px;
+}
+
+.qtd5 {
+    padding-right: 30px;
+    padding-left: 322px;
+}
+
+.qtd4 {
+    padding-right: 30px;
+    padding-left: 100px;
+}
+
+.qtd3 {
+    padding-right: 30px;
+    padding-left: 65px;
+}
+
+.qtd2 {
+    padding-right: 30px;
+    padding-left: 75px;
+}
+
+.qtd1 {
+    padding-right: 30px;
+    padding-left: 120px;
+}
+
+.btd5 {
+    padding-right: 30px;
+    padding-left: 339px;
+}
+
+.btd4 {
+    padding-right: 30px;
+    padding-left: 100px;
+}
+
+.btd3 {
+    padding-right: 30px;
+    padding-left: 65px;
+}
+
+.btd2 {
+    padding-right: 30px;
+    padding-left: 75px;
+}
+
+.btd1 {
+    padding-right: 30px;
+    padding-left: 120px;
+}
+
+.rtd5 {
+    padding-right: 30px;
+    padding-left: 321px;
+}
+
+.rtd4 {
+    padding-right: 30px;
+    padding-left: 100px;
+
+}
+
+.rtd3 {
+    padding-right: 30px;
+    padding-left: 65px;
+}
+
+.rtd2 {
+    padding-right: 30px;
+    padding-left: 75px;
+}
+
+.rtd1 {
+    padding-right: 30px;
+    padding-left: 120px;
+}
+
+.ctd5 {
+    padding-right: 30px;
+    padding-left: 288px;
+}
+
+.ctd4 {
+    padding-right: 30px;
+    padding-left: 100px;
+}
+
+.ctd3 {
+    padding-right: 30px;
+    padding-left: 65px;
+}
+
+.ctd2 {
+    padding-right: 30px;
+    padding-left: 75px;
+}
+
+.ctd1 {
+    padding-right: 30px;
+    padding-left: 120px;
+}
+
+.pvtd5 {
+    padding-right: 30px;
+    padding-left: 267px;
+}
+
+.pvtd4 {
+    padding-right: 30px;
+    padding-left: 100px;
+}
+
+.pvtd3 {
+    padding-right: 30px;
+    padding-left: 65px;
+}
+
+.pvtd2 {
+    padding-right: 30px;
+    padding-left: 75px;
+}
+
+.pvtd1 {
+    padding-right: 30px;
+    padding-left: 120px;
+}
+
+.etd5 {
+    padding-right: 30px;
+    padding-left: 254px;
+}
+
+.etd4 {
+    padding-right: 30px;
+    padding-left: 100px;
+}
+
+.etd3 {
+    padding-right: 30px;
+    padding-left: 65px;
+}
+
+.etd2 {
+    padding-right: 30px;
+    padding-left: 75px;
+}
+
+.etd1 {
+    padding-right: 30px;
+    padding-left: 120px;
+}
+    
+.footer-message {
+    margin-bottom: 30px;
+}
+
+textarea .input {
+    padding: 0.8rem 1.2rem;
+    min-height: 150px;
+    border-radius: 22px;
+    resize: none;
+    overflow-y: auto;
+    width: 300px;
+}
+
+.footer-text textarea {
+    color: #CCCCCC;
+    font-size: 0.95rem;
+}
+
+textarea {
+    color: #ffffff;
+    padding: 11px 20px;
+    border-radius: 30px ;
+    width: 1300px;
+    height: 150px;
+    border: 1.5px solid #8BA1D2;
+}
