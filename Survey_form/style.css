@@ -146,49 +146,9 @@ tr {
     padding-left: 345px;
 }
 
-.ptd4 {
-    padding-right: 30px;
-    padding-left: 100px;
-}
-
-.ptd3 {
-    padding-right: 30px;
-    padding-left: 65px;
-}
-
-.ptd2 {
-    padding-right: 30px;
-    padding-left: 75px;
-}
-
-.ptd1 {
-    padding-right: 30px;
-    padding-left: 120px;
-}
-
 .qtd5 {
     padding-right: 30px;
     padding-left: 322px;
-}
-
-.qtd4 {
-    padding-right: 30px;
-    padding-left: 100px;
-}
-
-.qtd3 {
-    padding-right: 30px;
-    padding-left: 65px;
-}
-
-.qtd2 {
-    padding-right: 30px;
-    padding-left: 75px;
-}
-
-.qtd1 {
-    padding-right: 30px;
-    padding-left: 120px;
 }
 
 .btd5 {
@@ -196,50 +156,9 @@ tr {
     padding-left: 339px;
 }
 
-.btd4 {
-    padding-right: 30px;
-    padding-left: 100px;
-}
-
-.btd3 {
-    padding-right: 30px;
-    padding-left: 65px;
-}
-
-.btd2 {
-    padding-right: 30px;
-    padding-left: 75px;
-}
-
-.btd1 {
-    padding-right: 30px;
-    padding-left: 120px;
-}
-
 .rtd5 {
     padding-right: 30px;
     padding-left: 321px;
-}
-
-.rtd4 {
-    padding-right: 30px;
-    padding-left: 100px;
-
-}
-
-.rtd3 {
-    padding-right: 30px;
-    padding-left: 65px;
-}
-
-.rtd2 {
-    padding-right: 30px;
-    padding-left: 75px;
-}
-
-.rtd1 {
-    padding-right: 30px;
-    padding-left: 120px;
 }
 
 .ctd5 {
@@ -247,49 +166,9 @@ tr {
     padding-left: 288px;
 }
 
-.ctd4 {
-    padding-right: 30px;
-    padding-left: 100px;
-}
-
-.ctd3 {
-    padding-right: 30px;
-    padding-left: 65px;
-}
-
-.ctd2 {
-    padding-right: 30px;
-    padding-left: 75px;
-}
-
-.ctd1 {
-    padding-right: 30px;
-    padding-left: 120px;
-}
-
 .pvtd5 {
     padding-right: 30px;
     padding-left: 267px;
-}
-
-.pvtd4 {
-    padding-right: 30px;
-    padding-left: 100px;
-}
-
-.pvtd3 {
-    padding-right: 30px;
-    padding-left: 65px;
-}
-
-.pvtd2 {
-    padding-right: 30px;
-    padding-left: 75px;
-}
-
-.pvtd1 {
-    padding-right: 30px;
-    padding-left: 120px;
 }
 
 .etd5 {
@@ -297,22 +176,22 @@ tr {
     padding-left: 254px;
 }
 
-.etd4 {
+.td4 {
     padding-right: 30px;
     padding-left: 100px;
 }
 
-.etd3 {
+.td3 {
     padding-right: 30px;
     padding-left: 65px;
 }
 
-.etd2 {
+.td2 {
     padding-right: 30px;
     padding-left: 75px;
 }
 
-.etd1 {
+.td1 {
     padding-right: 30px;
     padding-left: 120px;
 }
@@ -342,4 +221,26 @@ textarea {
     width: 1300px;
     height: 150px;
     border: 1.5px solid #8BA1D2;
+    margin-bottom: 30px;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    width: 150px;
+    border: 1.5px solid #8BA1D2;
+    border-radius: 25px;
+    background-color:rgb(68, 68, 221);
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 549;
+}
+
+button:hover {
+    background-color: #6d97f0;
 }
