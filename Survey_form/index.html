@@ -1,133 +1,431 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey_form</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main>
-        <header>
-            <div class="left-wrap">
-            <div class="avatar-placeholder">SN</div>
-            <h3 class="header-text">Swathi Nexus</h3>
-            </div>
-            <div class="right-wrap">
-            <div class="large-avatar-placeholder">Survey</div>
-            </div>
-        </header>
+      <header>
+        <div class="left-wrap">
+          <div class="avatar-placeholder" aria-hidden="true">SN</div>
+          <h3 class="header-text">Swathi Nexus</h3>
+        </div>
+        <div class="right-wrap">
+          <div class="large-avatar-placeholder">Survey</div>
+        </div>
+      </header>
 
-        <form>
-            <div class="input-wrap">
-                <div class="form-group input-text-top">
-                    <input type="text" class="pill-input W-long" placeholder="Enter Your Name" required>
-                    <input type="number" class="pill-input W-short" placeholder="Enter Your Age" required>
-                </div>
+      <form action="#" method="post">
+        <div class="input-wrap">
+          <div class="form-group input-text-top">
+            <label for="name" class="sr-only">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="pill-input W-long"
+              placeholder="Enter Your Name"
+              autocomplete="name"
+              required
+            />
 
-                <div class="form-group input-text-middle">
-                    <input type="text" class="pill-input W-short" placeholder="Enter Your Gender" required>
-                    <input type="text" class="pill-input W-long" placeholder="Enter Your Occupation" required>
-                </div>
+            <label for="age" class="sr-only">Age</label>
+            <input
+              type="number"
+              id="age"
+              name="age"
+              class="pill-input W-short"
+              placeholder="Enter Your Age"
+              min="1"
+              max="120"
+              required
+            />
+          </div>
 
-                <div class="form-group input-text-bottom">
-                    <input type="text" class="pill-input W-Complete" placeholder="Enter Your Email" required>
-                </div>
-            </div>
+          <div class="form-group input-text-middle">
+            <label for="gender" class="sr-only">Gender</label>
+            <select
+              id="gender"
+              name="gender"
+              class="pill-input W-short"
+              required
+            >
+              <option value="" disabled selected>Select Your Gender</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="non-binary">Non-binary</option>
+              <option value="prefer-not-to-say">Prefer not to say</option>
+            </select>
 
-            <div class="form-group">
-                <h3 class="radio-text">Please rate how much you agree with the following statements</h3>
-                <div class="radio-group">
-                    <table border="0" cellpadding="10">
-                        <thead>
-                            <tr>
-                                <th>Factors affecting purchase decision</th>
-                                <th>5<br>(Strongly Agree)</th>
-                                <th>4<br>(Agree)</th>
-                                <th>3<br>(Neutral)</th>
-                                <th>2<br>(Disagree)</th>
-                                <th>1<br>(Strongly Disagree)</th>
-                            </tr>
-                        </thead>
+            <label for="occupation" class="sr-only">Occupation</label>
+            <input
+              type="text"
+              id="occupation"
+              name="occupation"
+              class="pill-input W-long"
+              placeholder="Enter Your Occupation"
+              required
+            />
+          </div>
 
-                        <tbody>
-                            <tr>
-                                <td class="Data">Price</td>
-                                    <td class="ptd5"><input type="radio" name="price" value="5"></td>
-                                    <td class="td4"><input type="radio" name="price" value="4"></td>
-                                    <td class="td3"><input type="radio" name="price" value="3"></td>
-                                    <td class="td2"><input type="radio" name="price" value="2"></td>
-                                    <td class="td1"><input type="radio" name="price" value="1"></td>  
-                            </tr>
+          <div class="form-group input-text-bottom">
+            <label for="email" class="sr-only">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="pill-input W-Complete"
+              placeholder="Enter Your Email"
+              autocomplete="email"
+              required
+            />
+          </div>
+        </div>
 
-                            <tr>
-                                <td class="Data">Quantity</td>
-                                    <td class="qtd5"><input type="radio" name="Quantity" value="5"></td>
-                                    <td class="td4"><input type="radio" name="Quantity" value="4"></td>
-                                    <td class="td3"><input type="radio" name="Quantity" value="3"></td>
-                                    <td class="td2"><input type="radio" name="Quantity" value="2"></td>
-                                    <td class="td1"><input type="radio" name="Quantity" value="1"></td>
-                            </tr>
+        <div class="form-group">
+          <h3 class="radio-text">
+            Please rate how much you agree with the following statements
+          </h3>
+          <div class="radio-group">
+            <table>
+              <caption class="sr-only">
+                Rate how much each factor affects your purchase decision
+              </caption>
+              <thead>
+                <tr>
+                  <th scope="col">Factors affecting purchase decision</th>
+                  <th scope="col">5<br />(Strongly Agree)</th>
+                  <th scope="col">4<br />(Agree)</th>
+                  <th scope="col">3<br />(Neutral)</th>
+                  <th scope="col">2<br />(Disagree)</th>
+                  <th scope="col">1<br />(Strongly Disagree)</th>
+                </tr>
+              </thead>
 
-                            <tr>
-                                <td class="Data">Brand</td>
-                                    <td class="btd5"><input type="radio" name="Brand" value="5"></td>
-                                    <td class="td4"><input type="radio" name="Brand" value="4"></td>
-                                    <td class="td3"><input type="radio" name="Brand" value="3"></td>
-                                    <td class="td2"><input type="radio" name="Brand" value="2"></td>
-                                    <td class="td1"><input type="radio" name="Brand" value="1"></td>
-                            </tr>
+              <tbody>
+                <tr>
+                  <th scope="row">Price</th>
+                  <td>
+                    <input
+                      type="radio"
+                      name="price"
+                      value="5"
+                      aria-label="Price: 5, Strongly Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="price"
+                      value="4"
+                      aria-label="Price: 4, Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="price"
+                      value="3"
+                      aria-label="Price: 3, Neutral"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="price"
+                      value="2"
+                      aria-label="Price: 2, Disagree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="price"
+                      value="1"
+                      aria-label="Price: 1, Strongly Disagree"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Quantity</th>
+                  <td>
+                    <input
+                      type="radio"
+                      name="quantity"
+                      value="5"
+                      aria-label="Quantity: 5, Strongly Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="quantity"
+                      value="4"
+                      aria-label="Quantity: 4, Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="quantity"
+                      value="3"
+                      aria-label="Quantity: 3, Neutral"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="quantity"
+                      value="2"
+                      aria-label="Quantity: 2, Disagree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="quantity"
+                      value="1"
+                      aria-label="Quantity: 1, Strongly Disagree"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Brand</th>
+                  <td>
+                    <input
+                      type="radio"
+                      name="brand"
+                      value="5"
+                      aria-label="Brand: 5, Strongly Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="brand"
+                      value="4"
+                      aria-label="Brand: 4, Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="brand"
+                      value="3"
+                      aria-label="Brand: 3, Neutral"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="brand"
+                      value="2"
+                      aria-label="Brand: 2, Disagree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="brand"
+                      value="1"
+                      aria-label="Brand: 1, Strongly Disagree"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Reviews</th>
+                  <td>
+                    <input
+                      type="radio"
+                      name="reviews"
+                      value="5"
+                      aria-label="Reviews: 5, Strongly Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="reviews"
+                      value="4"
+                      aria-label="Reviews: 4, Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="reviews"
+                      value="3"
+                      aria-label="Reviews: 3, Neutral"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="reviews"
+                      value="2"
+                      aria-label="Reviews: 2, Disagree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="reviews"
+                      value="1"
+                      aria-label="Reviews: 1, Strongly Disagree"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Convenience</th>
+                  <td>
+                    <input
+                      type="radio"
+                      name="convenience"
+                      value="5"
+                      aria-label="Convenience: 5, Strongly Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="convenience"
+                      value="4"
+                      aria-label="Convenience: 4, Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="convenience"
+                      value="3"
+                      aria-label="Convenience: 3, Neutral"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="convenience"
+                      value="2"
+                      aria-label="Convenience: 2, Disagree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="convenience"
+                      value="1"
+                      aria-label="Convenience: 1, Strongly Disagree"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Personal Values</th>
+                  <td>
+                    <input
+                      type="radio"
+                      name="personal_values"
+                      value="5"
+                      aria-label="Personal Values: 5, Strongly Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="personal_values"
+                      value="4"
+                      aria-label="Personal Values: 4, Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="personal_values"
+                      value="3"
+                      aria-label="Personal Values: 3, Neutral"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="personal_values"
+                      value="2"
+                      aria-label="Personal Values: 2, Disagree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="personal_values"
+                      value="1"
+                      aria-label="Personal Values: 1, Strongly Disagree"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Emotional Factors</th>
+                  <td>
+                    <input
+                      type="radio"
+                      name="emotional_factors"
+                      value="5"
+                      aria-label="Emotional Factors: 5, Strongly Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="emotional_factors"
+                      value="4"
+                      aria-label="Emotional Factors: 4, Agree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="emotional_factors"
+                      value="3"
+                      aria-label="Emotional Factors: 3, Neutral"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="emotional_factors"
+                      value="2"
+                      aria-label="Emotional Factors: 2, Disagree"
+                    />
+                  </td>
+                  <td>
+                    <input
+                      type="radio"
+                      name="emotional_factors"
+                      value="1"
+                      aria-label="Emotional Factors: 1, Strongly Disagree"
+                    />
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
 
-                            <tr>
-                                <td class="Data">Reviews</td>
-                                    <td class="rtd5"><input type="radio" name="Reviews" value="5"></td>
-                                    <td class="td4"><input type="radio" name="Reviews" value="4"></td>
-                                    <td class="td3"><input type="radio" name="Reviews" value="3"></td>
-                                    <td class="td2"><input type="radio" name="Reviews" value="2"></td>
-                                    <td class="td1"><input type="radio" name="Reviews" value="1"></td>
-                            </tr>
+        <div class="form-group footer-text">
+          <label for="message" class="footer-message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            class="input"
+            required
+          ></textarea>
+        </div>
 
-                            <tr>
-                                <td class="Data">Convenience</td>
-                                    <td class="ctd5"><input type="radio" name="Convenience" value="5"></td>
-                                    <td class="td4"><input type="radio" name="Convenience" value="4"></td>
-                                    <td class="td3"><input type="radio" name="Convenience" value="3"></td>
-                                    <td class="td2"><input type="radio" name="Convenience" value="2"></td>
-                                    <td class="td1"><input type="radio" name="Convenience" value="1"></td>
-                            </tr>
-
-                            <tr>
-                                <td class="Data">Personal Values</td>
-                                    <td class="pvtd5"><input type="radio" name="Personal Values" value="5"></td>
-                                    <td class="td4"><input type="radio" name="Personal Values" value="4"></td>
-                                    <td class="td3"><input type="radio" name="Personal Values" value="3"></td>
-                                    <td class="td2"><input type="radio" name="Personal Values" value="2"></td>
-                                    <td class="td1"><input type="radio" name="Personal Values" value="1"></td>
-                            </tr>
-
-                            <tr>
-                                <td class="Data">Emotional Factors</td>
-                                    <td class="etd5"><input type="radio" name="Emotional Factors" value="5"></td>
-                                    <td class="td4"><input type="radio" name="Emotional Factors" value="4"></td>
-                                    <td class="td3"><input type="radio" name="Emotional Factors" value="3"></td>
-                                    <td class="td2"><input type="radio" name="Emotional Factors" value="2"></td>
-                                    <td class="td1"><input type="radio" name="Emotional Factors" value="1"></td>
-                           </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="form-group footer-text">
-                <h3 class="footer-message">Message</h3>
-                <textarea name="message" class="input" required></textarea>
-            </div>
-
-            <div class="btn-submit">
-                <button>Send</button>
-            </div>
-        </form>
+        <div class="btn-submit">
+          <button type="submit">Send</button>
+        </div>
+      </form>
     </main>
-    
-</body>
+  </body>
 </html>
